@@ -1,0 +1,407 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*------------------------ header -----------------------*/
+
+.header-container {
+  background: black;
+  display: flex;
+  height: 135px;
+  width: 100%;
+  padding: 10px 0px;
+  color: white;
+  gap: 40px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.header-container h1:hover {
+  cursor: pointer;
+}
+
+/*------------------------- nav --------------------------*/
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav-container img {
+  height: 120px;
+  margin-left: 50px;
+}
+
+.nav-container ul {
+  margin: 0;
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  font-size: 1.3rem;
+  padding: 0;
+}
+
+.nav-container ul a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-container ul a:hover {
+  color: #6d8a59;
+  border-radius: 4px 4px 4px 4px;
+  text-decoration: underline;
+}
+
+.nav-container a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.nav-container a span:hover {
+  color: #6d8a59;
+  text-decoration: underline;
+  border-radius: 4px 4px 4px 4px;
+}
+
+.nav-container button {
+  margin-right: 50px;
+  background: #6d8b5a;
+  padding: 15px;
+  font-size: 1.1;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+  color: white;
+}
+
+.nav-container button:active {
+  transform: scale(0.95);
+}
+
+.nav-container button a {
+  color: white;
+  text-decoration: none;
+}
+
+/*------------------------ div -----------------------------*/
+
+.presentacion-container {
+  background-image: url(/img/backgroundPuntoVerde.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+/*------------------------ Section -----------------------------*/
+
+.titulo-menu-dia {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  color: white;
+  text-shadow: 2px 3px BLACK;
+}
+
+.articles-menu-dia {
+  display: flex;
+  background-color: rgb(126 126 126 / 50%);
+  color: white;
+  margin: 0 25px;
+}
+
+.menu-dia1 {
+  display: flex;
+  align-items: center;
+  height: 500px;
+  width: 100%;
+  gap: 30px;
+}
+
+.menu-dia2 {
+  display: flex;
+  align-items: center;
+  height: 500px;
+  width: 100%;
+  gap: 30px;
+}
+
+.img-menu-dia {
+  height: 400px;
+  width: 350px;
+  box-shadow: 5px 5px 20px black;
+  cursor: pointer;
+}
+
+.info-menu-dia {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 20px;
+  text-shadow: black 2px 2px;
+}
+
+.info-menu-dia p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.section-nosotros {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.95rem;
+  margin-top: 40px;
+  background-color: rgb(237, 237, 237);
+  color: black;
+  padding: 25px 40px;
+  height: 300px;
+}
+
+.section-nosotros h3 {
+  color: rgb(109 138 90);
+}
+
+.section-nosotros p {
+  font-size: 1.15rem;
+}
+
+.section-menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 70px 50px;
+  background: #191919;
+}
+
+.article-menu {
+  text-align: justify;
+  color: black;
+  background-color: rgb(237, 237, 237);
+  position: relative;
+  transition: ease 0.8s;
+}
+
+.article-menu:hover {
+  transform: scale(1.03);
+}
+
+.tag {
+  position: absolute;
+  background-color: rgb(237, 237, 237);
+  color: black;
+  border-radius: 25px;
+  font-weight: 500;
+  top: 0;
+  right: 0;
+  padding: 8px;
+  margin: 8px;
+}
+
+.img-menu {
+  height: 400px;
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  margin: auto;
+  object-fit: cover;
+}
+
+.article-menu h2 {
+  color: rgb(109 138 90);
+  text-align: left;
+}
+
+.info-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  text-align: left;
+}
+
+/*------------------------- Section - Aside-------------------------*/
+/*------------------------- table - index.html-------------------------*/
+
+.section-aside-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(237, 237, 237);
+  padding: 50px 0;
+}
+
+.tabla-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.tabla-container tbody {
+  background-color: rgb(237, 237, 237);
+  padding: 20px 20px;
+}
+
+.tabla-container th {
+  padding: 15px;
+  font-size: 1.2rem;
+  color: rgb(109 138 90);
+  /* border: 1px black solid; */
+}
+
+.tabla-container td {
+  border: 1px black solid;
+}
+
+.tabla-container img {
+  width: 400px;
+}
+
+.aside-container {
+  color: rgb(109 138 90);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-container {
+  width: 700px;
+  height: 400px;
+}
+
+/*------------------------ table - contacto.html -------------------------*/
+
+/*------------------------- Section - Contactos-------------------------*/
+
+.section-contactos {
+  background: #191919;
+}
+
+.section-contactos table th {
+  color: rgb(109 138 90);
+}
+
+/*------------------------ form ---------------------------*/
+
+.form-container {
+  background-color: rgb(237, 237, 237);
+}
+
+.form-container label {
+  color: rgb(109 138 90);
+  font-weight: 500;
+}
+
+.form-container button {
+  background-color: rgb(109 138 90);
+  color: white;
+  font-weight: 500;
+}
+
+/*------------------------- footer -------------------------*/
+
+.footer-container {
+  background: black;
+  display: flex;
+  gap: 40px;
+  width: 100%;
+  color: white;
+  padding: 20px 0;
+}
+
+.footer-container ul li {
+  list-style: none;
+  padding: 10px;
+}
+
+.footer-container span {
+  padding: 10px;
+}
+
+.footer-container a {
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.footer-container a:hover {
+  color: rgb(109 138 90);
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1489px) {
+  .section-aside-container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .nav-container img {
+    height: 90px;
+  }
+  .container-fluid {
+    gap: 20px;
+  }
+
+  .nav-container ul:active ~ .navbar-collapse {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .articles-menu-dia {
+    flex-direction: column;
+  }
+  .menu-dia1,
+  .menu-dia2 {
+    flex-direction: column;
+    height: auto;
+  }
+  .img-menu-dia {
+    height: 250px;
+    width: 250px;
+  }
+  .section-nosotros {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .section-menu {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    padding: 70px 50px;
+  }
+
+  .section-aside-container {
+    display: flex;
+  }
+  .section-tabla {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .tabla-container img {
+    width: 100px;
+  }
+  .tabla-container tbody {
+    padding: 0;
+  }
+  .video-container {
+    width: 300px;
+    height: 200px;
+  }
+  .footer-container {
+    flex-direction: column;
+  }
+}
