@@ -347,7 +347,9 @@ body::-webkit-scrollbar-thumb {
 .footer-container a {
   padding: 10px;
   text-decoration: none;
-  color: white;
+  color: rgb(109 138 90);
+  font-size: 1.1rem;
+  font-weight: 500;
 }
 
 .footer-container a:hover {
