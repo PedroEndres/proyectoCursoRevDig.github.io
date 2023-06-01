@@ -13,10 +13,25 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
+    <link rel="stylesheet" href="/css/whatsapp.css" />
     <title>Document</title>
   </head>
 
   <body>
+    <!-------------------- Link para whatsapp ----------------------------------------------->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <a
+      href="https://api.whatsapp.com/send?phone=54%C2%A09%C2%A0336%C2%A0453-4302&text=Hola!%20sean%20bienvenidos%20a%20nuestro%20Whatsapp."
+      class="float"
+      target="_blank"
+    >
+      <i class="fa fa-whatsapp my-float"></i>
+    </a>
+
+    <!-------------------- HEADER / NAV ----------------------------------------------->
     <header class="header-container">
       <nav class="navbar navbar-expand-lg bg-body-tertiary nav-container">
         <div class="container-fluid bg-black">
@@ -33,7 +48,6 @@
           >
             <span class="navbar-toggler-icon w-auto">Menu</span>
           </button>
-
           <div
             class="collapse navbar-collapse bd-primary"
             id="navbarSupportedContent"
@@ -65,39 +79,11 @@
           </div>
         </div>
       </nav>
-
-      <!-- <nav class="nav-container">
-        <a href="#"
-          ><img src="img/logoPuntoVerde.png" alt="Logo de la página"
-        /></a>
-        <ul>
-          <a href="#menu">
-            <li id="todos">Todos</li>
-          </a>
-          <a href="#menu">
-            <li id="sandwich">Sándwiches</li>
-          </a>
-          <a href="#menu">
-            <li id="hamburguesa">Hamburguesas</li>
-          </a>
-          <a href="#menu">
-            <li id="wok">Wok</li>
-          </a>
-          <a href="#menu">
-            <li id="risotto">Risotos</li>
-          </a>
-          <a href="#menu">
-            <li id="pizza">Pizzas</li>
-          </a>
-          <a href="#menu">
-            <li id="wrap">Wrap</li>
-          </a>
-        </ul>
-        <a href="contacto.html"><button>Contactos</button></a>
-      </nav> -->
     </header>
 
+    <!-------------------- MAIN ----------------------------------------------->
     <main class="main-container">
+      <!-------------------- Menus del día y Presentacion de la página ----------------------------------------------->
       <div class="presentacion-container">
         <section>
           <h1 class="titulo-menu-dia">Menu del día</h1>
@@ -160,8 +146,9 @@
           </div>
         </section>
       </div>
-
+      <!-------------------- Section del menu ----------------------------------------------->
       <section class="section-menu" id="menu"></section>
+      <!-------------------- Table con los integrantes y ASIDE con video ----------------------------------------------->
       <div class="section-aside-container">
         <section class="section-tabla">
           <table class="tabla-container">
@@ -211,7 +198,7 @@
         </aside>
       </div>
     </main>
-
+    <!-------------------- FOOTER ----------------------------------------------->
     <footer class="footer-container">
       <ul>
         <li>Contáctanos</li>
@@ -225,6 +212,8 @@
         ><span>Instagram</span></a
       >
     </footer>
+
+    <!-------------------- SCRIPTS ----------------------------------------------->
     <script src="js/index.js" type="module"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>

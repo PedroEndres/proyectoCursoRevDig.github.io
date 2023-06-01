@@ -1,6 +1,6 @@
 const menu = [
   {
-    img: "../img/sandwichMushrooms.jpg",
+    img: "./img/sandwichMushrooms.jpg",
     alt: "Sandwich mushrooms",
     type: "sandwich",
     title: "CLUBHOUSE XXL",

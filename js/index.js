@@ -1,26 +1,7 @@
+//----------------- IMPORTANDO INFORMACION DE LOS MENU ------------------------
 import data from "./data.js";
 
-function bienvenida() {
-  let edad = prompt("ingresar edad: ");
-  if (edad >= 18) {
-    alert("bienvenid@!");
-  } else {
-    alert("Usted ingresa bajo su reponsabilidad");
-  }
-}
-
-// bienvenida();
-
-function localidad() {
-  let distancia = confirm("¿Vive a menos de 40km de San Nicolas?");
-  if (distancia == true) {
-    alert("Su envio será gratis!");
-  } else {
-    alert("Su envio tendrá un costo adicional");
-  }
-}
-
-// localidad();
+//----------------- DECLARACION DE VARIABLES ------------------------
 
 let sectionMenu = document.getElementById("menu");
 let btnTodos = document.getElementById("todos"); //cambiar Nombres
@@ -31,6 +12,8 @@ let btnRisotto = document.getElementById("risotto");
 let btnPizza = document.getElementById("pizza");
 let btnWrap = document.getElementById("wrap");
 
+//----------------- AGREGANDO EVENTOS ------------------------
+
 btnTodos.addEventListener("click", () => Validar("todos"));
 btnSandwich.addEventListener("click", () => Validar("sandwich"));
 btnHamburguesa.addEventListener("click", () => Validar("hamburguesa"));
@@ -38,6 +21,26 @@ btnWok.addEventListener("click", () => Validar("wok"));
 btnRisotto.addEventListener("click", () => Validar("risotto"));
 btnPizza.addEventListener("click", () => Validar("pizza"));
 btnWrap.addEventListener("click", () => Validar("wrap"));
+
+//----------------- FUNCIONES de Bienvenida, Localidad y una FUNCION que importa los menu ------------------------
+
+function bienvenida() {
+  let edad = prompt("ingresar edad: ");
+  if (edad >= 18) {
+    alert("bienvenid@!");
+  } else {
+    alert("Usted ingresa bajo su reponsabilidad al ser menor");
+  }
+}
+
+function localidad() {
+  let distancia = confirm("¿Vive a menos de 40km de San Nicolas?");
+  if (distancia == true) {
+    alert("Su envio será gratis!");
+  } else {
+    alert("Su envio tendrá un costo adicional");
+  }
+}
 
 function Validar(filtro) {
   let menu = data;
@@ -74,4 +77,8 @@ function Validar(filtro) {
   });
 }
 
+//----------------- Ejecución de las FUNCIONES ------------------------
+
+bienvenida();
+localidad();
 Validar("todos");
